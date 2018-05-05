@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="RecordKeeping" time="201805052301">
+	<entities>
+		<data-source id="mysql5-1633151f313-14a7f9b9c037b0fa">
+			<entity id="1" name="employee" fq-name="RecordKeeping.employee">
+				<path name="RecordKeeping"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations/>
+	<notes/>
+</diagram>
