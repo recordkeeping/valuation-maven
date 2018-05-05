@@ -50,16 +50,16 @@ select :focus {
 <body>
 <%@ include file ="EAHeader.jsp" %> 
 <br>
-<form action="CreateEmployeeServlet" method="post">
+<form action="EmployeeRegisterServlet" method="post">
 
 	<table align="left">
 		<tr>
 			<td>Name : </td> 
-			<td> <input type="text"></td>
+			<td> <input type="text" name="name"></td>
 		</tr>
 		<tr>
 			<td>Type of Employee : </td>
-			<td><select name="EmployeeType" >
+			<td><select name="type" >
 				<option value = "ENGINEER" >ENGINEER</option>
 				<option value = "MANAGEMENT">MANAGEMENT</option>
 				<option value = "ACCOUNTANT">ACCOUNTANT</option>
@@ -69,23 +69,23 @@ select :focus {
 		</tr>
 		<tr>
 			<td>Date of Birth : </td>
-			<td> <input type = "date" name="ename"></td>
+			<td> <input type = "date" name="dob"></td>
 		</tr>
 		<tr>
 			<td>Employee since : </td>
-			<td> <input type = "date" name="edob"></td>
+			<td> <input type = "date" name="joinDate"></td>
 		</tr>
 		<tr>
 			<td>Salary : </td>
-			<td> <input type="number" name="esalary"></td>
+			<td> <input type="number" name="salary"></td>
 		</tr>
 		<tr>
 			<td>Address : </td>
-			<td><textarea rows="5" cols="50" name="eaddress"></textarea></td>
+			<td><textarea rows="5" cols="50" name="address"></textarea></td>
 		</tr>
 		<tr>
 			<td>Mobile Number : </td>
-			<td><input type="number" name="emob"></td>
+			<td><input type="number" name="mobileNumber"></td>
 		<tr>
 		<td><input type="submit"></td>
 		
