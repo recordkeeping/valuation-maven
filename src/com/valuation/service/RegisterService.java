@@ -42,6 +42,7 @@ public class RegisterService {
 			Query<?> query = session.createQuery("from employee where id='" + employee.getId() + "'");
 			Employee u = (Employee) query.uniqueResult();
 			tx.commit();
+			System.out.println(u);
 			if (u != null)
 				result = true;
 		} catch (Exception ex) {

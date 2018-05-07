@@ -24,7 +24,7 @@ input {
 <h3 ALIGN="RIGHT">ENGINEER NAME</h3>
 <P ALIGN="center"><B>CREATE NEW ENTRY</B></P>
 <div>
-	<FORM action="CreateEntryServlet" method="post">
+	<FORM action="NewEntryServlet" method="post">
 	<table>
 	
 		<tr>
@@ -84,7 +84,7 @@ input {
 			
 			<td>
 			
-			<input type="submit" value="CREATE" action="CreateEntryServlet" >
+			<input type="submit" value="CREATE" action="NewEntryServlet" >
 			
 			</td>
 			

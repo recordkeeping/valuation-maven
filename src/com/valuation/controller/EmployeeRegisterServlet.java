@@ -24,6 +24,7 @@ public class EmployeeRegisterServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		String name = request.getParameter("name");
+		String password = request.getParameter("password");
 		String type = request.getParameter("type");
 
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -52,7 +53,7 @@ public class EmployeeRegisterServlet extends HttpServlet {
 		String mobileNumber = request.getParameter("mobileNumber");
 		String address = request.getParameter("address");
 
-		Employee user = new Employee(name, type, dob, joinDate, salary, mobileNumber, address);
+		Employee user = new Employee(name, password, type, dob, joinDate, salary, mobileNumber, address);
 
 		try {
 			RegisterService registerService = new RegisterService();

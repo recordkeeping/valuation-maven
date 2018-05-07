@@ -117,11 +117,11 @@ margin:0 0;
 </tr>
 <tr>
 <td><font size = "6">User Name </font> </td>
-<td><input type="text" required></td>
+<td><input type="text" name="name" required></td>
 </tr>
 <tr>
 <td><font size = "6">Password </font></td>
-<td><input type="password" required></td>
+<td><input type="password" name="password" required></td>
 </tr>
 <tr>
 <td></td>

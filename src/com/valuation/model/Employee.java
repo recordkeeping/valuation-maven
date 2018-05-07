@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+@Entity(name = "employee")
 @Table(name = "employee")
 public class Employee implements Serializable {
 
@@ -19,6 +19,7 @@ public class Employee implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
+	private String password;
 	private String type;
 	private Date dob;
 	private Date joinDate;
@@ -26,9 +27,13 @@ public class Employee implements Serializable {
 	private String mobileNumber;
 	private String address;
 
-	public Employee(String name, String type, Date dob, Date joinDate, Integer salary, String mobileNumber,
-			String address) {
+	public Employee() {
+	}
+
+	public Employee(String name, String password, String type, Date dob, Date joinDate, Integer salary,
+			String mobileNumber, String address) {
 		this.name = name;
+		this.password = password;
 		this.type = type;
 		this.dob = dob;
 		this.joinDate = joinDate;
@@ -51,6 +56,14 @@ public class Employee implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getType() {
